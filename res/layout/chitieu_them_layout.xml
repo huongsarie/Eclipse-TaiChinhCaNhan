@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    
+    >
+    
+    <LinearLayout
+        android:id="@+id/linear_bottom1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        android:weightSum="2" >
+
+        <Button
+            android:id="@+id/btHuyChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@drawable/button_bound_stage_red"
+            android:padding="10dp"
+            android:text="@string/thoat"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btLuuChi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/button_bound_stage_oran"
+            android:padding="10dp"
+            android:text="@string/luu"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+    android:layout_above="@+id/linear_bottom1" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/txtTitleChi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="20dp"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="THÊM CHI TIÊU"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TableLayout
+            android:id="@+id/tableChi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:stretchColumns="0,1" >
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:text="Ngày chi"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="2" >
+
+                    <EditText
+                        android:id="@+id/txtGioChi"
+						android:clickable="true"
+                        android:layout_weight="1.3"
+                        android:inputType="none"
+						android:editable="false" />
+
+                    <EditText
+                        android:id="@+id/txtNgayChi"
+						android:clickable="true"
+                        android:inputType="none"
+						android:editable="false"
+                        android:layout_weight="0.7" />
+                </TableRow>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/txtChiTu"
+                    android:text="Chi từ"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerChiTu"
+                    android:layout_width="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:id="@+id/txtMucChi"
+                    android:text="Mục chi"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <Spinner
+                    android:id="@+id/spinnerDMChi"
+                    android:layout_width="wrap_content" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:text="Sản phẩm"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/txtSPChi"
+                    android:layout_width="wrap_content"
+                    android:hint="vật mua" />
+                
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:text="Số tiền"
+                    android:textStyle="bold"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/txtTienChi"
+                    android:layout_width="wrap_content"
+                    android:hint="VNĐ"
+                    android:inputType="numberDecimal" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp" >
+
+                <TextView
+                    android:layout_marginRight="5dp"
+                    android:text="Ghi chú"
+                    android:textSize="15sp" />
+
+                <EditText
+                    android:id="@+id/txtMoTaChi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:inputType="textMultiLine" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>

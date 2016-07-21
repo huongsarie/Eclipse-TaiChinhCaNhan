@@ -1,0 +1,17 @@
+eclipse.preferences.version=1
+encoding//src/com/sar/taichinhcanhan/common/CommonVL.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/common/DebtItem.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/common/LoanItem.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/component/DatabaseManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/component/MySpinner.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/AccountManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/CatalogueManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/CollectingMoneyManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/DebtManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/DetailFragment.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/ExpenseManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/LoanManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/PlanningManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/fragment/StatisticsManager.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/main/MainActivity.java=UTF-8
+encoding//src/com/sar/taichinhcanhan/main/MyFragment.java=UTF-8
